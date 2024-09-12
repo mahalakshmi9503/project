@@ -1,0 +1,351 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.heading{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(234, 233, 235);
+    text-align: center;
+    color: brown;
+    font-size: 5vh;
+}
+.left-head{
+    animation: 1.5s linear 0.1s 1 normal left-head;
+}
+@keyframes left-head {
+    0%{
+        transform: translateX(-1000px);
+    }
+    80%{
+        transform: translateX(-999px);
+    }
+    97%{
+        transform:translateX(150px) ;
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.right-head{
+    animation: 2s linear 0.1s 1 normal right-head;
+}
+@keyframes right-head {
+    0%{
+        transform: translateX(1000px);
+    }
+    80%{
+        transform: translateX(999px);
+    }
+    97%{
+        transform: translateX(-150px);
+    }
+    100%{
+        transform: translate();
+    }
+}
+.navigation{
+    background-color: rgb(2, 49, 49);
+    width: 100%;
+    height: 7vh;
+    overflow: hidden;
+    position: sticky;
+    top:0;
+    
+    
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1rem;
+        
+    }
+    li{
+        list-style: none;
+        
+        margin: 0 auto ;
+      
+    }
+    a{
+        padding: 16px;
+        text-align: center;
+        background-color: rgb(151, 2, 2);
+        text-decoration: none;
+        color: antiquewhite;
+        box-shadow: 0 0 5px brown; 
+    }
+}
+body{
+    font-size: large;
+   
+}
+#home{
+    background-color: rgb(241, 255, 209);
+    padding: 2rem;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    p{
+        margin: 1rem auto;
+        color: rgb(248, 11, 11);
+    }
+}
+.home-img{
+    width: 100%;
+    margin: 1rem auto;
+   
+  img{
+    display: block;
+    width: 70%;
+    height:20rem;
+    box-shadow: 0 0 12px rgb(81, 80, 40);
+    margin: 0 auto;;
+    border-radius: 0.6rem;
+
+    
+  }
+}
+.temp-img{
+    animation: 0.3s linear 2s 1 normal temp-img ;
+  
+
+}
+@keyframes temp-img {
+    0%{
+        transform: translate(0);
+        box-shadow: 0 0 5rem black;
+        
+    }
+    45%
+    {
+        transform:rotate(10deg);
+    }
+    95%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: translate(0);
+    }
+    
+}
+.home-sec{
+    align-items: center;
+}
+
+
+.hotel1{
+    transform: rotateX('90deg');
+}
+
+
+.list{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+    background-color: rgb(202, 201, 201);
+    padding-top: 1rem;
+    text-align: center;
+    img{
+        display: block;
+        width: 18rem;
+        height: 12rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 7px rgb(15, 15, 16);
+      
+        margin:1rem auto 1rem auto;
+    }
+}
+.restaurant-list{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "restaurant1 restaurant2 restaurant3";
+    grid-gap: 1rem;
+
+    
+}
+.hotel-list{
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "restaurant1 restaurant2 restaurant3";
+    grid-gap: 1rem;
+
+}
+.list{
+    margin: 1rem auto;
+
+}.footer{
+    height: 10rem;
+    padding: 2rem;
+    background-color: antiquewhite;
+    h3{
+        margin-top: 2rem;
+    }
+    a{
+        padding:14px;
+        background-color: black;
+        color: white;
+       
+    };
+}
+h1,h2{
+    text-align: center;
+    padding: 1rem;
+   
+}
+
+@media screen and (min-width:450px )
+{
+    .fixed{
+        position: fixed;
+        right: 0;
+        width: 6rem;
+        text-align: center;
+        background-color: rgb(3, 12, 69);
+        color: brown;
+        box-shadow: 0 0 5px rgb(27, 25, 25);
+        font-size: 10px;
+    }
+    .temples{
+        padding-bottom: 1rem;
+        width: 100%;
+      display: flow-root;
+        background-color: rgb(196, 212, 225);
+        p{
+            margin: 3rem;
+            
+        }
+    }
+    .temp-img{
+        display: block;
+            width: 16rem;
+            height: 18rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 7px rgb(15, 15, 16);
+          
+            margin:1rem auto 1rem auto;
+    }
+    .list{
+        width: 17rem;
+        height: 26rem;
+        img{
+            display: block;
+            width: 14rem;
+            height: 10rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 7px rgb(15, 15, 16);
+          
+            margin:1rem auto 1rem auto;
+        }
+    }
+    .list img:hover{
+        width: 100%;
+        height:12rem ;
+    }
+    .restaurant-list{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap-reverse;
+    }
+    .hotel-list{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column wrap-reverse;
+    }
+        
+    }
+
+    
+    @media screen and (min-width:790px) {
+        .temples{
+            padding-bottom: 2rem;
+            width: 100%;
+          display: flow-root;
+            background-color: rgb(196, 212, 225);
+            p{
+                margin: 3rem;
+                
+            }
+        img{
+            border-radius: 0.5rem;
+            box-shadow: 0 0 7px black;
+        }
+        
+           
+            
+        }
+        
+        .right{
+            display: block;
+            float: right;
+            width: 15rem;
+            margin: auto 1rem;
+            
+        }
+        .left{
+            display: block;
+            float: left;
+            width: 15rem;
+            margin: auto 3rem;
+        }
+        .restaurant-list{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+        }
+        .hotel-list{
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+        }
+    }
+@media screen and (min-width:1020px) {
+    .fixed{
+        position: fixed;
+        left: 0;
+        width: 8rem;
+        text-align: center;
+        background-color: rgb(3, 12, 69);
+        color: brown;
+        box-shadow: 0 0 5px rgb(27, 25, 25);
+        font-size: 1rem;
+    }
+    .list{
+        width: 20rem;
+        height: 30rem;
+        border-radius: 0.5rem;
+        background-color: rgb(202, 201, 201);
+        padding-top: 1rem;
+        text-align: center;
+        img{
+            display: block;
+            width: 18rem;
+            height: 12rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 7px rgb(15, 15, 16);
+          
+            margin:0 auto 1rem auto;
+        }
+    }
+    .list img:hover{
+        width: 100%;
+        height:14rem ;
+    }
+    .restaurant-list{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "restaurant1 restaurant2 restaurant3";
+        grid-gap: 1rem;
+    
+    .hotel-list{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "restaurant1 restaurant2 restaurant3";
+        grid-gap: 1rem;
+
+    }
+}
+}

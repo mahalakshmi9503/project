@@ -1,0 +1,333 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.position-section{
+    position: sticky;
+    top: 0;
+    
+}
+.position-company-icon{
+ margin: 20px;
+ align-self: center;
+}
+.position{
+    display: flex;
+    background-color: gray;
+    align-self: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+}
+.company-details{
+    margin: 20px;
+    .company-add{
+    li{
+        display: inline;
+        margin: 2px;
+        list-style: none;
+
+    }
+    }
+}
+.indiamart-icon{
+    align-self: center;
+    margin: 0 1rem;
+}
+.position-company-contact{
+    display: flex;
+   
+    
+   align-self: center;
+
+    .contact-phone{
+       
+        display: flex;
+        border:1px solid red;
+        height: 50px;
+        width:170px;
+        padding-top: 5px;
+        margin: 0 1rem;
+        border-radius: 0.5rem;
+        background-color: 
+        rgba(8, 4, 4, 0.76);
+        color: white;
+        float: right;
+        
+     
+        img{
+            width: 2rem;
+            align-self: center;
+             margin:0 5px ;
+         }
+        .number{
+            margin: 0 2px;
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
+    }
+    .contact-email{
+        float: right;
+        border:1px solid red;
+        height: 50px;
+        width:170px;
+        text-align: center;
+        display: flex;
+        margin: 0 1rem;
+        border-radius: 0.5rem;
+        background-color: red;
+        color: white;
+        h3{
+            padding-left: 2px;
+            padding-top: 13px;
+            margin-left: 5px;
+        }
+        img{
+            width: 2rem;
+            align-self: center;
+            margin: 0 5px;
+           
+        }
+
+    }
+}
+.navigation{
+    background-color: rgb(45, 48, 47);
+}
+    
+    
+    .nav-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    }
+   .items{
+    width: 5rem;
+    height: 2rem;
+   
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4px;
+    
+a{
+    text-decoration: none;
+    color: white;
+}
+
+   }
+   .searchbox{
+    width: max-content;
+    height: 2rem;
+    
+    margin-right: 0%;
+    padding-top: 0%;
+    align-self: center;
+    
+    position: relative;
+    top: 0;
+    #search{
+        color: rgb(158, 116, 116);
+        width: 15rem;
+        height: 2rem;
+
+        
+        
+    }
+    
+    
+   }
+   .search{
+    margin-left: 0%;
+    background-color: red;
+    
+   }
+   .items:hover{
+    background-color: red;
+   }
+   .search:hover{
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    a{
+        color: red;
+    }
+   }
+   /*mini product display */
+   .mini-display-products{
+    
+   }
+   .container
+   {
+    
+display: grid;
+grid-gap: 10px 20px;
+grid-template-columns: auto;
+
+grid-template-areas: "mini-sink bathroom-fitting flushing-cistern srv-brand-sink  brass-bathroom srv-maruthi-sink long-body-bib stainless-steel-sink victory-sink";
+grid-template-rows: auto;
+height: fit-content; 
+padding-left: 1rem;
+padding-top: 1rem;
+
+}
+   .mini-product{
+    
+    width: 7rem;
+    height: 10rem;
+text-align: center;
+    img{
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        align-self: center;
+    }
+    
+ 
+  
+}
+   .mini-product:hover,.mini-product:focus{
+    background-color: rgb(223, 228, 231);
+    border-radius: 0.5rem;
+   }
+   /* section container2*/
+   .medium-display-product{
+    background-color: rgb(230, 228, 228);
+padding-top: 1rem;
+   }
+
+   .container2{
+
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto;
+grid-template-areas: "no-1 no-2 no-3";
+grid-gap: 1rem;
+padding-left: 2rem;
+
+
+   }
+.container3{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "no-4 no-5 no-6 no-7 no-8";
+grid-gap: 1rem;
+padding-left: 2rem;
+margin-top: 2rem;
+}
+   .medium-products{
+    
+    width: 14rem;
+    height: 28rem;
+   padding-left: 17px;
+   padding-top: 1rem;
+   border-radius: 0.5rem;
+   background-color: white;
+   h3{
+    margin: 1rem 0;
+   }
+   h3:hover{
+color: red;
+   }
+   
+
+img{
+    width: 12rem;
+    height: 12rem;
+
+align-items: center;
+}
+input{
+    background-color: rgb(179, 32, 32);
+    padding: 0.7rem 3rem;
+    margin: 1rem 1rem 0 1rem;
+    border-radius: 0.5rem;
+align-self: baseline;
+position: relative;
+    bottom: 0;
+    right: 2;
+    left: 6;
+
+}
+
+
+   }
+   .medium-products:hover{
+    box-shadow: 0 0 1rem gray;
+   }
+   .contact-info{
+    display: flex;
+   flex-wrap: wrap;
+    background-color: rgb(27, 31, 27);
+    padding: 1rem 0;
+   }
+   .contact-us{
+    padding-left: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    addres{
+        padding-top: 1rem;
+    }
+    h1{
+        padding-bottom: 2rem;
+    }
+    p{
+padding: 1.5rem 0;
+    }
+    img{
+        width: 1rem;
+       
+    }
+    width: 50%;
+    .email{
+        img{
+            
+        }
+    }
+   }
+   .form{
+    width: 38rem;
+    height: 23rem;
+    background-color: whitesmoke;
+    align-self: center;
+margin-left: 2rem;
+border-radius: 0.5rem;
+padding: 2rem 4rem;
+fieldset{
+    border: none;
+
+}
+
+   }
+  textarea,[id="description"]{
+    background-color: rgb(233, 222, 222);
+    border-color: white;
+    width: 100%;
+
+
+  }
+  footer{
+    background-color: rgb(212, 217, 221);
+    padding: 2rem;
+  }
+input{
+    width: 100%;
+    height: 2rem;
+    padding: 0.5;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+    border: 0;
+   background-color:rgb(233, 222, 222);
+}
+input[type="submit"]{
+    width: fit-content;
+    padding: 0 2rem;
+    color: white;
+    background-color: rgb(138, 2, 2);
+}
+section{
+   
+}

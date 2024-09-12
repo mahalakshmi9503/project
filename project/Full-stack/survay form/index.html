@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> Personal Survey Page</h1>
+        <p id="description">This is an simple process you can take the survey by filling the details below....</p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <fieldset class="first-fs" >
+                <p><label for="name" id="name-label">Name
+                <input type="text" id="name" class="first-input" placeholder="Enter your name" required></label></p>
+               <p> <label for="email" id="email-label">Email
+                <input type="email" id="email" class="first-input" placeholder="Enter your email" required></label></p>
+                <p><label for="number" id="number-label">Age
+            <input type="number" id="number" min="12" max="60" class="first-input" placeholder="Select your Age " required></label></p>
+
+            </fieldset>
+             
+            <fieldset class="second-fs">
+                <p><label for="gender">Gender</label></p>
+                <p><label for="male"><input type="radio" name="gender" id=" male"> Male </label></p>
+                <p><label for="fmale"><input type="radio" name="gender" id="fmale"> Female</label></p>
+ <p> <label for="trans"><input type="radio" name="gender" id="trans"> Trans</label></p>
+                
+            </fieldset>
+            <fieldset class="third-fs">
+                <label for="dropdown"> what is your education status?</label>
+                <select name="eq" id="dropdown">
+                    <option value="">select one</option>
+                    <option value="one">10th pass</option>
+                    <option value="two"> 12th pass</option>
+                    <option value="three">under Graguate</option>
+                </select>
+            </fieldset>
+            <fieldset class="fourth-fs">
+                <p> <label for="subjects">what is your faverout subject</label></p>
+                <p><label for="tamil"><input type="checkbox" id="tamil" value="1" > Tamil</label></p>
+                <p><label for="eng"> <input type="checkbox" name="eng" value="2" id="eng"> English</label></p>
+                <p><label for="math"><input type="checkbox" name="math" id="math" value="3"> Maths</label></p>
+                <p><label for="sci"><input type="checkbox" name="sci" id="sci" value="4"> Science</label></p>
+                <p><label for="soc"><input type="checkbox" name="soc" id="soc" value="5"> Social</label></p>
+
+            </fieldset>
+            <fieldset class="fifth-fs">
+                <label for="comments"> If you have any comments/feedback</label>
+                <textarea name="comments" id="comments" placeholder="Enter your comments hear.."></textarea>
+            </fieldset>
+            <input type="submit" id="submit" value="submit">
+        </form>
+    </main>
+    
+</body>
+</html>
